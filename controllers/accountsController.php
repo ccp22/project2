@@ -125,7 +125,7 @@ class accountsController extends http\controller
             echo 'user not found';
         } else {
 
-            if($user->checkPassword($_POST['password']) == TRUE) {
+            if($user->checkPassword($_POST['password'])) {
 
                 echo 'login';
 
@@ -134,6 +134,7 @@ class accountsController extends http\controller
                 //forward the user to the show all todos page
                 print_r($_SESSION);
             } else {
+                print_r($user);
                 echo 'password does not match';
             }
 
