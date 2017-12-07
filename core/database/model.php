@@ -5,6 +5,7 @@ use http\controller;
 
 abstract class model
 {
+    //All the CRUD Operations
 
     public function save()
     {

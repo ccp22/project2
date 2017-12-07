@@ -35,9 +35,9 @@ final class account extends \database\model
 
     public function setPassword($password) {
 
-        $password = password_hash($password, PASSWORD_DEFAULT);
+        $password = password_hash($password, PASSWORD_BCRYPT);
 
-
+        //echo $password;
         return $password;
 
     }
@@ -45,7 +45,6 @@ final class account extends \database\model
     public function checkPassword($LoginPassword) {
 
         return password_verify($LoginPassword, $this->password);
-
 
     }
 
