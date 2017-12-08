@@ -12,7 +12,7 @@ class controller
 
         $template = 'pages/' . $template . '.php';
 //in your template you should use $data to access your array
-        print_r($data);
+        //print_r($data);
         include $template;
 
     }

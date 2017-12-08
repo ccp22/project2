@@ -25,6 +25,7 @@ class homepageController extends http\controller
 //template data contains what will show up in the $data variable in the homepage template
 //the name of the template 'homepage' becomes 'homepage.php' in the pages directory
 
+
         self::getTemplate('homepage', $templateData);
     }
 

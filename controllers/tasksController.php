@@ -28,7 +28,9 @@ class tasksController extends http\controller
         $userID = $_SESSION['userID'];
 
         $records = todos::findTasksbyID($userID);
-
+//
+//        /** @var TYPE_NAME $records */
+//        echo '<script>window.alert('.$records.')</script>';
         self::getTemplate('all_tasks', $records);
 
     }
