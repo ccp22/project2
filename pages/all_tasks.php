@@ -19,7 +19,9 @@
 </head>
 
 <body>
-
+    <div id="addNew">
+        <a href="index.php?page=tasks&action=create">Add New Task</a>
+    </div>
 <?php
 //this is how you print something
 

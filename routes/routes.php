@@ -52,6 +52,27 @@ class routes
         $route->method = 'show';
         $routes[] = $route;
 
+        //This is to request Add new task Form
+        //Get Method index.php?page=tasks&action=create
+        $route = new route();
+        $route->http_method = 'GET';
+        $route->action = 'create';
+        $route->page = 'tasks';
+        $route->controller = 'tasksController';
+        $route->method = 'create';
+        $routes[] = $route;
+
+        //This is response to add data to tasks.
+        //POST Method index.php?page=tasks&action=create
+        $route = new route();
+        $route->http_method = 'POST';
+        $route->action = 'create';
+        $route->page = 'tasks';
+        $route->controller = 'tasksController';
+        $route->method = 'addNew';
+        $routes[] = $route;
+
+
         //This is an examole of the post for tasks to list tasks.  See the action matches the method name.
         //you need to add routes for create, edit, and delete
         //GET METHOD index.php?page=tasks&action=all

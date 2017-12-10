@@ -39,9 +39,30 @@ class tasksController extends http\controller
 
     //you should check the notes on the project posted in moodle for how to use active record here
 
+    //Routing for create new Task form
     public static function create()
     {
-        print_r($_POST);
+//        print_r($_POST);
+        self::getTemplate('add_task');
+    }
+
+    public static function addNew() {
+        session_start();
+
+        $user = accounts::findUserbyID($_SESSION['userID']);
+
+        $task = new todo();
+        $task->id = '';
+        $task->createddate = $_POST['sdate'];
+        $task->message = $_POST['tmessage'];
+        $task->duedate = $_POST['ddate'];
+        $task->ownerid = $user->id;
+        $task->owneremail = $user->email;
+        $task->isdone = 0;
+        $task->save();
+
+        header("Location: index.php?page=tasks&action=all");
+
     }
 
     //this is the function to view edit record form
@@ -54,6 +75,7 @@ class tasksController extends http\controller
     }
 
     //this would be for the post for sending the task edit form
+    //Only for Edit
     public static function store()
     {
 

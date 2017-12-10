@@ -131,11 +131,9 @@ class accountsController extends http\controller
                 print_r($user);
                 session_start();
                 $_SESSION["userID"] = $user->id;
-
                 //forward the user to the show all todos page
 //                $allTodos = todos::findTasksbyID($user->id);
                 header("Location: index.php?page=tasks&action=all");
-
 
                 print_r($_SESSION);
             } else {

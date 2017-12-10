@@ -26,8 +26,8 @@ class processRequest
         $controller_method = $requested_route->method;
 
         //these echo helps figure out the controller name and method
-        // echo $controller_name . '</br>';
-        // echo $controller_method . '</br>';
+        echo $controller_name . '</br>';
+        echo $controller_method . '</br>';
 
 
         //I use a static for the controller because it doesn't have any properties
@@ -49,7 +49,7 @@ class processRequest
         echo 'Action: ' . $action . '</br>';
         echo 'Page: ' . $page . '</br>';
         echo 'Request Method: ' . $request_method . '</br>';
-        
+
         //this gets the routes objects, you need to add routes to add pages and follow the template of the route specified
         $routes = \routes::getRoutes();
         $foundRoute = NULL;
