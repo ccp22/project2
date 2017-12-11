@@ -79,6 +79,11 @@ class Manage
             return;
         }
     }
+
+    public static function helper() {
+        include 'helpers.php';
+        return;
+    }
 }
 
 spl_autoload_register(array('Manage', 'routes'));
@@ -86,4 +91,8 @@ spl_autoload_register(array('Manage', 'controllers'));
 spl_autoload_register(array('Manage', 'collections'));
 spl_autoload_register(array('Manage', 'models'));
 spl_autoload_register(array('Manage', 'core'));
+spl_autoload_register(array('Manage', 'helper'));
+
+
+
 

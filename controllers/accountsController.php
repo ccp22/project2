@@ -6,7 +6,6 @@
  * Time: 5:32 PM
  */
 
-
 //each page extends controller and the index.php?page=tasks causes the controller to be called
 class accountsController extends http\controller
 {
@@ -141,6 +140,18 @@ class accountsController extends http\controller
                 echo 'password does not match';
             }
 
+        }
+    }
+
+    public static function logout() {
+        logToConsole('Inside Logout');
+        session_start();
+        if (isset($_SESSION['userID'])) {
+            logToConsole('Inside Logout - If block');
+            unset($_SESSION['userID']);
+            echo 'Inside logout';
+            session_destroy();
+            header("Location: index.php");
         }
     }
 
