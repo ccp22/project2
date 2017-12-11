@@ -22,6 +22,13 @@
     <div id="addNew">
         <a href="index.php?page=tasks&action=create">Add New Task</a>
     </div>
+    <?php
+        if (isset($_SESSION['userID'])) {
+            echo '<div id="logout">
+                       <a href=""></a>
+                  </div>';
+        }
+    ?>
 <?php
 //this is how you print something
 

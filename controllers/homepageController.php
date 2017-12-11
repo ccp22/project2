@@ -21,12 +21,14 @@ class homepageController extends http\controller
 
 
         $templateData['site_name'] = 'mysite';
-
+        session_start();
 //template data contains what will show up in the $data variable in the homepage template
 //the name of the template 'homepage' becomes 'homepage.php' in the pages directory
-
-
-        self::getTemplate('homepage', $templateData);
+        if (isset($_SESSION['userID'])) {
+            header("Location: index.php?page=tasks&action=all");
+        }else {
+            self::getTemplate('homepage', $templateData);
+        }
     }
 
     public static function create()
