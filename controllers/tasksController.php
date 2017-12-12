@@ -42,6 +42,7 @@ class tasksController extends http\controller
     //Routing for create new Task form
     public static function create()
     {
+        session_start();
 //        print_r($_POST);
         self::getTemplate('add_task');
     }

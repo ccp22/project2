@@ -14,6 +14,7 @@ class accountsController extends http\controller
     //to call the show function the url is index.php?page=task&action=show
     public static function show()
     {
+        session_start();
         $record = accounts::findOne($_REQUEST['id']);
         self::getTemplate('show_account', $record);
     }

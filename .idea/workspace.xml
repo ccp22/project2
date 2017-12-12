@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c8b066-dc25-4e81-91b6-1847444d35fb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/pages/header.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/controllers/accountsController.php" afterPath="$PROJECT_DIR$/controllers/accountsController.php" />
       <change beforePath="$PROJECT_DIR$/controllers/tasksController.php" afterPath="$PROJECT_DIR$/controllers/tasksController.php" />
-      <change beforePath="$PROJECT_DIR$/pages/add_task.php" afterPath="$PROJECT_DIR$/pages/add_task.php" />
-      <change beforePath="$PROJECT_DIR$/pages/all_accounts.php" afterPath="$PROJECT_DIR$/pages/all_accounts.php" />
-      <change beforePath="$PROJECT_DIR$/pages/all_tasks.php" afterPath="$PROJECT_DIR$/pages/all_tasks.php" />
-      <change beforePath="$PROJECT_DIR$/pages/error.php" afterPath="$PROJECT_DIR$/pages/error.php" />
-      <change beforePath="$PROJECT_DIR$/pages/homepage.php" afterPath="$PROJECT_DIR$/pages/homepage.php" />
-      <change beforePath="$PROJECT_DIR$/pages/meta.php" afterPath="$PROJECT_DIR$/pages/meta.php" />
-      <change beforePath="$PROJECT_DIR$/pages/notfound.php" afterPath="$PROJECT_DIR$/pages/notfound.php" />
-      <change beforePath="$PROJECT_DIR$/pages/register.php" afterPath="$PROJECT_DIR$/pages/register.php" />
-      <change beforePath="$PROJECT_DIR$/pages/show_account.php" afterPath="$PROJECT_DIR$/pages/show_account.php" />
-      <change beforePath="$PROJECT_DIR$/pages/styles.css" afterPath="$PROJECT_DIR$/pages/styles.css" />
     </list>
     <list id="af6e5da8-a1f7-4157-b2b6-779893e94faf" name="Initial MVC starter project added" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,8 +46,8 @@
       <file leaf-file-name="tasksController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/tasksController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="92" column="33" lean-forward="false" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
+            <state relative-caret-position="475">
+              <caret line="61" column="16" lean-forward="true" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -103,21 +92,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="meta.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/meta.php">
+      <file leaf-file-name="accountsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/accountsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+            <state relative-caret-position="495">
+              <caret line="38" column="54" lean-forward="true" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notfound.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/notfound.php">
+      <file leaf-file-name="meta.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/meta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+            <state relative-caret-position="422">
+              <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -136,7 +125,7 @@
       <file leaf-file-name="show_account.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/show_account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
+            <state relative-caret-position="345">
               <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
               <folding />
             </state>
@@ -178,7 +167,6 @@
         <option value="$PROJECT_DIR$/routes/routes.php" />
         <option value="$PROJECT_DIR$/pages/show_task.php" />
         <option value="$PROJECT_DIR$/core/database/model.php" />
-        <option value="$PROJECT_DIR$/controllers/accountsController.php" />
         <option value="$PROJECT_DIR$/pages/bootstrapStyle.css" />
         <option value="$PROJECT_DIR$/pages/styles.css" />
         <option value="$PROJECT_DIR$/pages/homepage.php" />
@@ -190,8 +178,9 @@
         <option value="$PROJECT_DIR$/pages/error.php" />
         <option value="$PROJECT_DIR$/pages/show_account.php" />
         <option value="$PROJECT_DIR$/pages/header.php" />
-        <option value="$PROJECT_DIR$/controllers/tasksController.php" />
         <option value="$PROJECT_DIR$/pages/meta.php" />
+        <option value="$PROJECT_DIR$/controllers/tasksController.php" />
+        <option value="$PROJECT_DIR$/controllers/accountsController.php" />
         <option value="$PROJECT_DIR$/database.php" />
       </list>
     </option>
@@ -339,7 +328,7 @@
       <workItem from="1512689627904" duration="9195000" />
       <workItem from="1512879619043" duration="12421000" />
       <workItem from="1512965291993" duration="6048000" />
-      <workItem from="1513040605846" duration="15866000" />
+      <workItem from="1513040605846" duration="16151000" />
     </task>
     <task id="LOCAL-00001" summary="Initial MVC starter project added">
       <created>1512606319175</created>
@@ -352,7 +341,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60011000" />
+    <option name="totallyTimeSpent" value="60296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="721" extended-state="0" />
@@ -703,14 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/accountsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="67" column="39" lean-forward="false" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/bootstrapStyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -783,14 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/show_account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/all_tasks.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
@@ -823,14 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/tasksController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="92" column="33" lean-forward="false" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/meta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
@@ -853,6 +818,30 @@
             <marker date="1513062335000" expanded="true" signature="991:1075" ph="..." />
             <marker date="1513062335000" expanded="true" signature="1113:1235" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/tasksController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="61" column="16" lean-forward="true" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/show_account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/accountsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="38" column="54" lean-forward="true" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
