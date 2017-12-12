@@ -27,14 +27,18 @@
             echo '<div id="logout">
                        <a href="index.php?page=accounts&action=logout">Sign Out</a>
                   </div>';
+            echo '<div id="myProfile">
+                       <a href="index.php?page=accounts&action=show&id='.$_SESSION['userID'].'">My Profile</a>
+                  </div>';
         }
     ?>
 <?php
 //this is how you print something
 //print utility\htmlTable::genarateTableFromMultiArray($data);
-    echo '<h3>Tasks you have addded!</h3>';
-    echo "<table class=\"table table-hover\">";
-    if (count($data) > 0) {
+    //print_r($data);
+    if (count($data) > 1) {
+        echo '<h3>Tasks you have added!</h3>';
+        echo "<table class=\"table table-hover\">";
         echo "<thead class=\"thead-dark\">
                     <tr>
                         <th>View</th>
@@ -60,6 +64,8 @@
                         <td>".$isdone ."</td>
                     </tr>";
         }
+    }else {
+        echo '<h4>You have not added any tasks yet!</h4>';
     }
     echo "</tbody></table><hr>";
 

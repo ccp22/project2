@@ -21,6 +21,9 @@
 <body>
 
 <h1><?php echo $data ?></h1>
+<div>
+    <h3><a href="index.php">Home</a></h3>
+</div>
 
 
 <script src="js/scripts.js"></script>
