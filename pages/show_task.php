@@ -23,9 +23,21 @@
 <?php
 //this is how you print something  $data contains the record that was selected on the table.
 
-//print_r($data);
+print_r($data);
+//2017-12-22 00:00:00
+//dateToHTML($data->createddate);
+
 ?>
 
+<form action="index.php?page=tasks&action=update&id=<?php echo $data->id;?>" method="post" id="form2">
+    Message: <input type="text" value="<?php echo $data->message;?>" name="message"><br>
+    Created Date: <input type="datetime-local" value="<?php echo dateToHTML($data->createddate);?>" name="createddate"><br>
+    Due Date: <input type="datetime-local" value="<?php echo dateToHTML($data->duedate);?>" name="duedate"><br>
+    Owner ID: <input type="text" value="<?php echo $data->ownerid;?>" name="ownerid" disabled><br>
+    Owner Email: <input type="text" value="<?php echo $data->owneremail;?>" name="owneremail" disabled><br>
+    Status: <input type="text" value="<?php echo $data->isdone;?>" name="isdone" disabled><br>
+    <button type="submit" value="update">Save</button>
+</form>
 <form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1">
     <button type="submit" form="form1" value="delete">Delete</button>
 </form>

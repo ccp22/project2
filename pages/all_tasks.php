@@ -32,29 +32,32 @@
 <?php
 //this is how you print something
 //print utility\htmlTable::genarateTableFromMultiArray($data);
+    echo '<h3>Tasks you have addded!</h3>';
     echo "<table class=\"table table-hover\">";
     if (count($data) > 0) {
         echo "<thead class=\"thead-dark\">
                     <tr>
                         <th>View</th>
-                        <th>Owner Email</th>
-                        <th>Owner ID</th>
+                        <th>Message</th>
                         <th>Created Date</th>
                         <th>Due Date</th>
-                        <th>Message</th>
                         <th>Status</th>
                     </tr>
                 </thead>";
         echo '<tbody>';
+        $isdone = 'N/A';
         foreach ($data as $row) {
+            if($row->isdone == 0) {
+                $isdone = 'Pending';
+            }else {
+                $isdone = 'Done';
+            }
             echo "<tr>
                         <td><a href=\"index.php?page=tasks&action=show&id=$row->id\">View</a></td>
-                        <td>".$row->owneremail."</td>
-                        <td>".$row->ownerid."</td>
+                        <td>".$row->message."</td>
                         <td>".$row->createddate."</td>
                         <td>".$row->duedate."</td>
-                        <td>".$row->message."</td>
-                        <td>".$row->isdone."</td>
+                        <td>".$isdone ."</td>
                     </tr>";
         }
     }
