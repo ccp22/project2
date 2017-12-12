@@ -19,7 +19,9 @@
 </head>
 
 <body>
-
+<?php
+include "header.php";
+?>
 
 <form action="index.php?page=accounts&action=register" method="post">
     First name: <input type="text" name="fname" required><br>

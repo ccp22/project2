@@ -19,6 +19,9 @@
 </head>
 
 <body>
+<?php
+include "header.php";
+?>
     <div id="addNew">
         <a href="index.php?page=tasks&action=create">Add New Task</a>
     </div>

@@ -16,6 +16,9 @@
 </head>
 
 <body>
+<?php
+include "header.php";
+?>
 
 <form action="index.php?page=tasks&action=create" method="post">
     Task Message: <input type="text" name="tmessage"><br>

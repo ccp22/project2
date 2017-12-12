@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c8b066-dc25-4e81-91b6-1847444d35fb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/pages/styles.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/header.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/controllers/accountsController.php" afterPath="$PROJECT_DIR$/controllers/accountsController.php" />
+      <change beforePath="$PROJECT_DIR$/controllers/tasksController.php" afterPath="$PROJECT_DIR$/controllers/tasksController.php" />
+      <change beforePath="$PROJECT_DIR$/pages/add_task.php" afterPath="$PROJECT_DIR$/pages/add_task.php" />
       <change beforePath="$PROJECT_DIR$/pages/all_accounts.php" afterPath="$PROJECT_DIR$/pages/all_accounts.php" />
       <change beforePath="$PROJECT_DIR$/pages/all_tasks.php" afterPath="$PROJECT_DIR$/pages/all_tasks.php" />
       <change beforePath="$PROJECT_DIR$/pages/error.php" afterPath="$PROJECT_DIR$/pages/error.php" />
+      <change beforePath="$PROJECT_DIR$/pages/homepage.php" afterPath="$PROJECT_DIR$/pages/homepage.php" />
       <change beforePath="$PROJECT_DIR$/pages/meta.php" afterPath="$PROJECT_DIR$/pages/meta.php" />
+      <change beforePath="$PROJECT_DIR$/pages/notfound.php" afterPath="$PROJECT_DIR$/pages/notfound.php" />
       <change beforePath="$PROJECT_DIR$/pages/register.php" afterPath="$PROJECT_DIR$/pages/register.php" />
       <change beforePath="$PROJECT_DIR$/pages/show_account.php" afterPath="$PROJECT_DIR$/pages/show_account.php" />
+      <change beforePath="$PROJECT_DIR$/pages/styles.css" afterPath="$PROJECT_DIR$/pages/styles.css" />
     </list>
     <list id="af6e5da8-a1f7-4157-b2b6-779893e94faf" name="Initial MVC starter project added" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,40 +29,27 @@
       <file leaf-file-name="all_tasks.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/all_tasks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="67" column="22" lean-forward="true" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+            <state relative-caret-position="369">
+              <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="69" />
               <folding>
-                <marker date="1513055755000" expanded="true" signature="650:759" ph="..." />
-                <marker date="1513055755000" expanded="true" signature="800:872" ph="..." />
-                <marker date="1513055755000" expanded="true" signature="800:873" ph="..." />
-                <marker date="1513055755000" expanded="true" signature="800:936" ph="..." />
-                <marker date="1513055755000" expanded="true" signature="1250:1533" ph="..." />
-                <marker date="1513055755000" expanded="true" signature="1275:1508" ph="..." />
-                <marker date="1513055755000" expanded="true" signature="1782:2110" ph="..." />
+                <marker date="1513060783000" expanded="true" signature="681:790" ph="..." />
+                <marker date="1513060783000" expanded="true" signature="831:903" ph="..." />
+                <marker date="1513060783000" expanded="true" signature="831:904" ph="..." />
+                <marker date="1513060783000" expanded="true" signature="831:967" ph="..." />
+                <marker date="1513060783000" expanded="true" signature="1281:1564" ph="..." />
+                <marker date="1513060783000" expanded="true" signature="1306:1539" ph="..." />
+                <marker date="1513060783000" expanded="true" signature="1813:2141" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accountsController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/accountsController.php">
+      <file leaf-file-name="show_task.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/show_task.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="347">
-              <caret line="67" column="39" lean-forward="false" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+              <caret line="34" column="55" lean-forward="false" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/database/model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
-              <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-              <folding>
-                <marker date="1513052479000" expanded="true" signature="1254:1338" ph="INSERT INTO ${$tableName}... " />
-                <marker date="1513052479000" expanded="true" signature="2119:2159" ph="DELETE FROM ${$tableName}... " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -66,29 +57,28 @@
       <file leaf-file-name="tasksController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/tasksController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+            <state relative-caret-position="457">
+              <caret line="92" column="33" lean-forward="false" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show_account.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/show_account.php">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="2" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="495">
+              <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+              <folding>
+                <marker date="1513062335000" expanded="true" signature="288:739" ph="..." />
+                <marker date="1513062335000" expanded="true" signature="333:443" ph="..." />
+                <marker date="1513062335000" expanded="true" signature="481:565" ph="..." />
+                <marker date="1513062335000" expanded="true" signature="603:721" ph="..." />
+                <marker date="1513062335000" expanded="true" signature="820:1253" ph="..." />
+                <marker date="1513062335000" expanded="true" signature="865:953" ph="..." />
+                <marker date="1513062335000" expanded="true" signature="991:1075" ph="..." />
+                <marker date="1513062335000" expanded="true" signature="1113:1235" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,21 +93,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="meta.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/meta.php">
+      <file leaf-file-name="homepage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/homepage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="55" lean-forward="false" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+            <state relative-caret-position="475">
+              <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homepage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/homepage.php">
+      <file leaf-file-name="meta.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/meta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+            <state relative-caret-position="422">
+              <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notfound.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/notfound.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -126,8 +126,18 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+            <state relative-caret-position="345">
+              <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show_account.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/show_account.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -145,6 +155,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>store</find>
+      <find>s</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,10 +169,7 @@
         <option value="$PROJECT_DIR$/core/utility/htmlTable.php" />
         <option value="$PROJECT_DIR$/core/http/controller.php" />
         <option value="$PROJECT_DIR$/includes/meta.php" />
-        <option value="$PROJECT_DIR$/pages/notfound.php" />
         <option value="$PROJECT_DIR$/collections/accounts.php" />
-        <option value="$PROJECT_DIR$/pages/add_task.php" />
-        <option value="$PROJECT_DIR$/pages/homepage.php" />
         <option value="$PROJECT_DIR$/controllers/homepageController.php" />
         <option value="$PROJECT_DIR$/collections/todos.php" />
         <option value="$PROJECT_DIR$/autoload.php" />
@@ -170,14 +178,19 @@
         <option value="$PROJECT_DIR$/routes/routes.php" />
         <option value="$PROJECT_DIR$/pages/show_task.php" />
         <option value="$PROJECT_DIR$/core/database/model.php" />
-        <option value="$PROJECT_DIR$/controllers/tasksController.php" />
-        <option value="$PROJECT_DIR$/pages/all_accounts.php" />
-        <option value="$PROJECT_DIR$/pages/error.php" />
         <option value="$PROJECT_DIR$/controllers/accountsController.php" />
-        <option value="$PROJECT_DIR$/pages/all_tasks.php" />
-        <option value="$PROJECT_DIR$/pages/register.php" />
-        <option value="$PROJECT_DIR$/pages/show_account.php" />
+        <option value="$PROJECT_DIR$/pages/bootstrapStyle.css" />
         <option value="$PROJECT_DIR$/pages/styles.css" />
+        <option value="$PROJECT_DIR$/pages/homepage.php" />
+        <option value="$PROJECT_DIR$/pages/register.php" />
+        <option value="$PROJECT_DIR$/pages/notfound.php" />
+        <option value="$PROJECT_DIR$/pages/add_task.php" />
+        <option value="$PROJECT_DIR$/pages/all_accounts.php" />
+        <option value="$PROJECT_DIR$/pages/all_tasks.php" />
+        <option value="$PROJECT_DIR$/pages/error.php" />
+        <option value="$PROJECT_DIR$/pages/show_account.php" />
+        <option value="$PROJECT_DIR$/pages/header.php" />
+        <option value="$PROJECT_DIR$/controllers/tasksController.php" />
         <option value="$PROJECT_DIR$/pages/meta.php" />
         <option value="$PROJECT_DIR$/database.php" />
       </list>
@@ -326,7 +339,7 @@
       <workItem from="1512689627904" duration="9195000" />
       <workItem from="1512879619043" duration="12421000" />
       <workItem from="1512965291993" duration="6048000" />
-      <workItem from="1513040605846" duration="11384000" />
+      <workItem from="1513040605846" duration="15866000" />
     </task>
     <task id="LOCAL-00001" summary="Initial MVC starter project added">
       <created>1512606319175</created>
@@ -339,7 +352,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55529000" />
+    <option name="totallyTimeSpent" value="60011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="721" extended-state="0" />
@@ -416,22 +429,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/utility/htmlTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -574,13 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/notfound.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -594,13 +584,6 @@
         <state relative-caret-position="240">
           <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/add_task.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -690,50 +673,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/all_accounts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-791">
           <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/edit_account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/edit_task.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/show_task.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/error.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -746,14 +689,6 @@
             <marker date="1512519904000" expanded="true" signature="298:312" ph="SELECT * FRO... ${$tableName}" />
             <marker date="1512519904000" expanded="true" signature="1177:1222" ph="SELECT * FRO... ${$tableName}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/tasksController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,59 +711,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/all_tasks.php">
+    <entry file="file://$PROJECT_DIR$/pages/bootstrapStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="67" column="22" lean-forward="true" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
-          <folding>
-            <marker date="1513055755000" expanded="true" signature="650:759" ph="..." />
-            <marker date="1513055755000" expanded="true" signature="800:872" ph="..." />
-            <marker date="1513055755000" expanded="true" signature="800:873" ph="..." />
-            <marker date="1513055755000" expanded="true" signature="800:936" ph="..." />
-            <marker date="1513055755000" expanded="true" signature="1250:1533" ph="..." />
-            <marker date="1513055755000" expanded="true" signature="1275:1508" ph="..." />
-            <marker date="1513055755000" expanded="true" signature="1782:2110" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/homepage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/meta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="55" lean-forward="false" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/show_account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="2" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+        <state relative-caret-position="249">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/add_task.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="2" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/all_accounts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/edit_account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/edit_task.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/notfound.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/show_account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/all_tasks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="69" />
+          <folding>
+            <marker date="1513060783000" expanded="true" signature="681:790" ph="..." />
+            <marker date="1513060783000" expanded="true" signature="831:903" ph="..." />
+            <marker date="1513060783000" expanded="true" signature="831:904" ph="..." />
+            <marker date="1513060783000" expanded="true" signature="831:967" ph="..." />
+            <marker date="1513060783000" expanded="true" signature="1281:1564" ph="..." />
+            <marker date="1513060783000" expanded="true" signature="1306:1539" ph="..." />
+            <marker date="1513060783000" expanded="true" signature="1813:2141" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/show_task.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="34" column="55" lean-forward="false" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/tasksController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="92" column="33" lean-forward="false" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/meta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+          <folding>
+            <marker date="1513062335000" expanded="true" signature="288:739" ph="..." />
+            <marker date="1513062335000" expanded="true" signature="333:443" ph="..." />
+            <marker date="1513062335000" expanded="true" signature="481:565" ph="..." />
+            <marker date="1513062335000" expanded="true" signature="603:721" ph="..." />
+            <marker date="1513062335000" expanded="true" signature="820:1253" ph="..." />
+            <marker date="1513062335000" expanded="true" signature="865:953" ph="..." />
+            <marker date="1513062335000" expanded="true" signature="991:1075" ph="..." />
+            <marker date="1513062335000" expanded="true" signature="1113:1235" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

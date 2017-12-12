@@ -81,6 +81,7 @@ class tasksController extends http\controller
 
 
         $record = todos::findOne($_REQUEST['id']);
+        logToConsole(print_r($_POST));
 //        print_r($record);
         $record->id = $_REQUEST['id'];
         $record->message = $_POST['message'];
@@ -88,10 +89,11 @@ class tasksController extends http\controller
         $record->owneremail = $record->owneremail;
         $record->createddate = $_POST['createddate'];
         $record->duedate = $_POST['duedate'];
-        $record->isdone = $_POST['isdone'];
+        $record->isdone = intval($_POST['isdone']);
+        print_r($record->isdone);
         $record->save();
 
-        header("Location: index.php?page=tasks&action=all");
+        //header("Location: index.php?page=tasks&action=all");
     }
 
     //this is the delete function.  You actually return the edit form and then there should be 2 forms on that.

@@ -19,6 +19,9 @@
 </head>
 
 <body>
+<?php
+include "header.php";
+?>
 
 <h1>Email: <?php echo $data->email; ?></h1>
 <h1>First Name: <?php echo $data->fname; ?></h1>
