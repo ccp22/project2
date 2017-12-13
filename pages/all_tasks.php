@@ -26,12 +26,12 @@ include "header.php";
         <a href="index.php?page=tasks&action=create">Add New Task</a>
     </div>
     <?php
-        if (isset($_SESSION['userID'])) {
+        if (isset($_SESSION['uid'])) {
             echo '<div id="logout">
                        <a href="index.php?page=accounts&action=logout">Sign Out</a>
                   </div>';
             echo '<div id="myProfile">
-                       <a href="index.php?page=accounts&action=show&id='.$_SESSION['userID'].'">My Profile</a>
+                       <a href="index.php?page=accounts&action=show&id='.$_SESSION['uid'].'">My Profile</a>
                   </div>';
         }
     ?>
@@ -67,10 +67,10 @@ include "header.php";
                         <td>".$isdone ."</td>
                     </tr>";
         }
+        echo "</tbody></table><hr>";
     }else {
         echo '<h4>You have not added any tasks yet!</h4>';
     }
-    echo "</tbody></table><hr>";
 
 ?>
 

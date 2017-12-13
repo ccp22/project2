@@ -21,9 +21,9 @@ include "header.php";
 ?>
 
 <form action="index.php?page=tasks&action=create" method="post">
-    Task Message: <input type="text" name="tmessage"><br>
-    Start Date: <input type="datetime-local" name="sdate"><br>
-    Due Date: <input type="datetime-local" name="ddate"><br>
+    Task Message: <input type="text" name="tmessage" required><br>
+    Start Date: <input type="datetime-local" name="sdate" required><br>
+    Due Date: <input type="datetime-local" name="ddate" required><br>
     <input type="submit" value="Add Todo">
 </form>
 

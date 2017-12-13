@@ -4,7 +4,7 @@
     </div>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar-out-id">
         <?php
-            if (isset($_SESSION['userID'])) {
+            if (isset($_SESSION['uid'])) {
                 echo '
             <ul class="navbar-nav">
                 <li class="nav-item active">

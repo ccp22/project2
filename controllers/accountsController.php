@@ -106,7 +106,9 @@ class accountsController extends http\controller
 
         $record = accounts::findOne($_REQUEST['id']);
         $record->delete();
-        header("Location: index.php?page=accounts&action=all");
+        session_destroy();
+        unset($_SESSION['uid']);
+        header("Location: index.php");
     }
 
     //this is to login, here is where you find the account and allow login or deny.
@@ -131,7 +133,7 @@ class accountsController extends http\controller
                 echo 'login<br>';
                 print_r($user);
                 session_start();
-                $_SESSION["userID"] = $user->id;
+                $_SESSION['uid'] = $user->id;
                 //forward the user to the show all todos page
 //                $allTodos = todos::findTasksbyID($user->id);
                 header("Location: index.php?page=tasks&action=all");
@@ -148,9 +150,9 @@ class accountsController extends http\controller
     public static function logout() {
         logToConsole('Inside Logout');
         session_start();
-        if (isset($_SESSION['userID'])) {
+        if (isset($_SESSION['uid'])) {
             logToConsole('Inside Logout - If block');
-            unset($_SESSION['userID']);
+            unset($_SESSION['uid']);
             echo 'Inside logout';
             session_destroy();
             header("Location: index.php");

@@ -26,7 +26,7 @@ class tasksController extends http\controller
         $records = todos::findAll();
         session_start();
 
-        $userID = $_SESSION['userID'];
+        $userID = $_SESSION['uid'];
 
         $records = todos::findTasksbyID($userID);
 //
@@ -51,7 +51,7 @@ class tasksController extends http\controller
     public static function addNew() {
         session_start();
 
-        $user = accounts::findUserbyID($_SESSION['userID']);
+        $user = accounts::findUserbyID($_SESSION['uid']);
 
         $task = new todo();
         $task->id = '';
