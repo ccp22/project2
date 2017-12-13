@@ -40,7 +40,7 @@ include "header.php";
         <div class="row">
             <div class="col-sm-7"></div>
             <div class="col-sm-5" id="login-block">
-                <h2 id="login-title">Login</h2>
+                <h1 id="login-title">Login</h1>
                 <form class="form-horizontal" action="index.php?page=accounts&action=login" method="POST">
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="email">Email:</label>
