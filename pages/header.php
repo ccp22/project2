@@ -1,36 +1,38 @@
-<div>
+<div id="outer-div">
     <div id="logo-header">
         <h2 id="logo-head-id">Task-ToDos</h2>
     </div>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar-out-id">
         <?php
             if (isset($_SESSION['uid'])) {
                 echo '
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.php?page=tasks&action=all">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=accounts&action=logout">Logout</a>
-                </li>
-            </ul>';
+                <nav class="navbar navbar-inverse">
+                      <div class="container-fluid">
+                        
+                        <ul class="nav navbar-nav navbar-leftside">
+                          <li><a href="index.php?page=tasks&action=all"><span class="glyphicon glyphicon-home"></span></a></li>
+                          <li><a href="index.php?page=tasks&action=create"><span class="glyphicon glyphicon-plus"></span> Add Task</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                          <li><a href="index.php?page=accounts&action=show&id='.$_SESSION['uid'].'"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+                          <li><a href="index.php?page=accounts&action=logout"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
+                        </ul>
+                      </div>
+                </nav>';
             }else {
                 echo '
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=accounts&action=register">Register</a>
-                </li>
-            </ul>';
+                <nav class="navbar navbar-inverse">
+                      <div class="container-fluid">
+                        
+                        <ul class="nav navbar-nav">
+                          <li><a href="index.php"><span class="glyphicon glyphicon-home"></span></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                          <li><a href="index.php?page=accounts&action=register"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                          <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        </ul>
+                      </div>
+                </nav>';
             }
         ?>
-    </nav>
 </div>
+
