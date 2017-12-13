@@ -14,7 +14,7 @@
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                           <li><a href="index.php?page=accounts&action=show&id='.$_SESSION['uid'].'"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
-                          <li><a href="index.php?page=accounts&action=logout"><span class="glyphicon glyphicon-log-out"></span> Login</a></li>
+                          <li><a href="index.php?page=accounts&action=logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                         </ul>
                       </div>
                 </nav>';

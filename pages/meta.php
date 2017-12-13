@@ -58,9 +58,9 @@
         border-radius: 10px;
         height: 300px;
         padding-left: 40px;
+        box-shadow: 0px 0px 20px 0px gray;
     }
     #login-block:hover{
-        box-shadow: 0px 0px 20px 0px gray;
     }
     #login-title {
         text-align: center;
