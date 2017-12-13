@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c8b066-dc25-4e81-91b6-1847444d35fb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pages/all_tasks.php" afterPath="$PROJECT_DIR$/pages/all_tasks.php" />
-      <change beforePath="$PROJECT_DIR$/pages/header.php" afterPath="$PROJECT_DIR$/pages/header.php" />
-      <change beforePath="$PROJECT_DIR$/pages/meta.php" afterPath="$PROJECT_DIR$/pages/meta.php" />
-      <change beforePath="$PROJECT_DIR$/pages/register.php" afterPath="$PROJECT_DIR$/pages/register.php" />
+      <change beforePath="$PROJECT_DIR$/database.php" afterPath="$PROJECT_DIR$/database.php" />
     </list>
     <list id="af6e5da8-a1f7-4157-b2b6-779893e94faf" name="Initial MVC starter project added" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,11 +38,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/register.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="386">
               <caret line="65" column="54" lean-forward="false" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -121,19 +127,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="collection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/database/collection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
-              <folding>
-                <marker date="1512519904000" expanded="true" signature="298:312" ph="SELECT * FRO... ${$tableName}" />
-                <marker date="1512519904000" expanded="true" signature="1177:1222" ph="SELECT * FRO... ${$tableName}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -184,7 +177,6 @@
         <option value="$PROJECT_DIR$/pages/error.php" />
         <option value="$PROJECT_DIR$/pages/show_account.php" />
         <option value="$PROJECT_DIR$/pages/show_task.php" />
-        <option value="$PROJECT_DIR$/database.php" />
         <option value="$PROJECT_DIR$/controllers/tasksController.php" />
         <option value="$PROJECT_DIR$/controllers/accountsController.php" />
         <option value="$PROJECT_DIR$/pages/add_task.php" />
@@ -193,6 +185,7 @@
         <option value="$PROJECT_DIR$/pages/homepage.php" />
         <option value="$PROJECT_DIR$/pages/meta.php" />
         <option value="$PROJECT_DIR$/pages/register.php" />
+        <option value="$PROJECT_DIR$/database.php" />
       </list>
     </option>
   </component>
@@ -348,7 +341,7 @@
       <workItem from="1512879619043" duration="12421000" />
       <workItem from="1512965291993" duration="6048000" />
       <workItem from="1513040605846" duration="20603000" />
-      <workItem from="1513134584529" duration="14979000" />
+      <workItem from="1513134584529" duration="15109000" />
     </task>
     <task id="LOCAL-00001" summary="Initial MVC starter project added">
       <created>1512606319175</created>
@@ -361,7 +354,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79727000" />
+    <option name="totallyTimeSpent" value="79857000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -680,14 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -858,6 +843,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
           <caret line="65" column="54" lean-forward="false" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
           <folding />
         </state>
       </provider>
