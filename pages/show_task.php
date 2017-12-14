@@ -36,8 +36,17 @@ include 'header.php';
     Owner ID: <input type="text" value="<?php echo $data->ownerid;?>" name="ownerid" disabled><br>
     Owner Email: <input type="text" value="<?php echo $data->owneremail;?>" name="owneremail" disabled><br>
     Status: <select name="isdone">
-        <option value="1">Done</option>
-        <option value="0">Pending</option>
+        <?php
+            if($data->isdone == 0) {
+                echo '
+                    <option value="1">Done</option>
+                    <option value="0" selected>Pending</option>';
+            }else {
+                echo '
+                    <option value="1" selected>Done</option>
+                    <option value="0">Pending</option>';
+            }
+        ?>
     </select>
     <button type="submit" value="update">Save</button>
 </form>

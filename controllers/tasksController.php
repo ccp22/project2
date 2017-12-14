@@ -91,7 +91,7 @@ class tasksController extends http\controller
         $record->owneremail = $record->owneremail;
         $record->createddate = $_POST['createddate'];
         $record->duedate = $_POST['duedate'];
-        $record->isdone = intval($_POST['isdone']);
+        $record->isdone = $_POST['isdone'];
         print_r($record->isdone);
         $record->save();
 

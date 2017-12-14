@@ -20,12 +20,44 @@
 include "header.php";
 ?>
 
-<form action="index.php?page=tasks&action=create" method="post">
-    Task Message: <input type="text" name="tmessage" required><br>
-    Start Date: <input type="datetime-local" name="sdate" required><br>
-    Due Date: <input type="datetime-local" name="ddate" required><br>
-    <input type="submit" value="Add Todo">
-</form>
+<div class="container">
+    <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8" id="addtask-div">
+        <div class="row">
+            <h1 id="register-title">Create New Task</h1>
+        </div>
+        <form class="form-horizontal" action="index.php?page=tasks&action=create" method="POST">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="tmessage">Message:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="tmessage" placeholder="Enter task message" name="tmessage" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="sdate">Start Date:</label>
+                <div class="col-sm-8">
+                    <input type="datetime-local" class="form-control" id="sdate" name="sdate" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="ddate">Due Date:</label>
+                <div class="col-sm-8">
+                    <input type="datetime-local" class="form-control" id="ddate" name="ddate" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-8">
+                    <button type="submit" class="btn btn-default" id="register-submit-btn">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-2"></div>
+    </div>
+</div>
+
+
 
 
 <script src="js/scripts.js"></script>

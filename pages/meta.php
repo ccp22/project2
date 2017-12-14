@@ -8,8 +8,10 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
     body {
         background-image: url('images/bg.jpg');
+        font-family: 'Montserrat', sans-serif;
     }
     a {
         text-decoration: none !important;
@@ -18,9 +20,10 @@
         background-color: #222 ;
     }
     #logo-header {
-        font-family: 'Berkshire Swash', cursive !important;
+        font-family: 'Montserrat', sans-serif !important;
         color: white;
         background-color: #222 !important;
+        text-align: center;
     }
     .navbar-inverse {
         border: none !important;
@@ -81,6 +84,38 @@
         color: #fff !important;
         background-color: #333 !important;
         border-color: #333 !important;
+    }
+    #register-div-block {
+        background-color: lightgray;
+        border-radius: 10px;
+        height: 530px;
+        padding-left: 40px;
+        box-shadow: 0px 0px 20px 0px gray;
+    }
+    #addtask-div {
+        background-color: lightgray;
+        border-radius: 10px;
+        height: 380px;
+        padding-left: 40px;
+        box-shadow: 0px 0px 20px 0px gray;
+    }
+    .task-content-row{
+        background-color: rgba(202, 202, 202, 0.36);
+        color: #222;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 5px;
+    }
+    .task-content-row:hover {
+        box-shadow: 0px 0px 20px 0px gray;
+    }
+    .edit-row-btn {
+        float: right;
+    }
+    .duedate-row {
+        float: left;
     }
     a:active {
 

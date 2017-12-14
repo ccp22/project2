@@ -27,38 +27,56 @@ include "header.php";
 //this is how you print something
 //print utility\htmlTable::genarateTableFromMultiArray($data);
     //print_r($data);
-    if (count($data) > 1) {
-        echo '<h3>Tasks you have added!</h3>';
-        echo "<table class=\"table table-hover\">";
-        echo "<thead class=\"thead-dark\">
-                    <tr>
-                        <th>View</th>
-                        <th>Message</th>
-                        <th>Created Date</th>
-                        <th>Due Date</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>";
-        echo '<tbody>';
-        $isdone = 'N/A';
-        foreach ($data as $row) {
-            if($row->isdone == 0) {
-                $isdone = 'Pending';
-            }else {
-                $isdone = 'Done';
-            }
-            echo "<tr>
-                        <td><a href=\"index.php?page=tasks&action=show&id=$row->id\">View</a></td>
-                        <td>".$row->message."</td>
-                        <td>".$row->createddate."</td>
-                        <td>".$row->duedate."</td>
-                        <td>".$isdone ."</td>
-                    </tr>";
-        }
-        echo "</tbody></table><hr>";
+
+    if(count($data) > 1) {
+        echo '
+            <div class="container">
+                <div class="row">
+                <h1 id="register-title">Your Tasks</h1></div>
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8" id="all-task-content-block">';
+                foreach ($data as $row) {
+                    if($row->isdone == 0) {
+                        echo '<a href="index.php?page=tasks&action=show&id='.$row->id.'">
+                        <div class="col-sm-12 task-content-row">
+                            <div class="task-title-row">
+                                <h2>'.$row->message.'</h2>
+                            </div>
+                            <div class="task-detail-row">
+                                <div class="duedate-row">
+                                    <p><strong>Due date: </strong>'.$row->duedate.'</p>
+                                </div>
+                                <div class="edit-row-btn"><span class="glyphicon glyphicon-edit"></span> Edit</div>
+                            </div>      
+                        </div></a>
+                        ';
+                    }else {
+                        echo '<a href="index.php?page=tasks&action=show&id='.$row->id.'">
+                        <div class="col-sm-12 task-content-row">
+                            <div class="task-title">
+                                <h2>'.$row->message.'</h2>
+                            </div>
+                            <div class="task-detail-row">
+                                <div class="duedate-row">
+                                    <p><strong>Due date: </strong>'.$row->duedate.'</p>
+                                </div>
+                                <div class="edit-row-btn"><span class="glyphicon glyphicon-edit"></span> Edit</div>
+                            </div>           
+                        </div></a>
+                        ';
+                    }
+                }
+               echo '</div>
+                    <div class="col-sm-2"></div>
+                </div>  
+            </div>
+        ';
     }else {
         echo '<h4>You have not added any tasks yet!</h4>';
     }
+
+
 
 ?>
 
