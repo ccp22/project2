@@ -35,10 +35,9 @@ include "header.php";
 <div class="container">
     <div class="row">
         <div class="col-sm-2"></div>
-        <div class="col-sm-8" id="account-block-div">
+        <div class="col-sm-8 center-content-block" id="account-block-div">
             <div class="account-header-row">
                 <h1 id="user-name-title"><span>Welcome!</span> <strong><?php echo $data->fname.' '.$data->lname?></strong></h1>
-
             </div>
             <div class="user-details-content-block">
                 <form class="form-horizontal" action="index.php?page=accounts&action=save&id=<?php echo $data->id; ?>" method="POST">
@@ -103,13 +102,13 @@ include "header.php";
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-8">
-                            <button type="submit" class="btn btn-default" id="register-submit-btn">Submit</button>
+                            <button type="submit" class="btn btn-default" id="register-submit-btn">Update</button>
                         </div>
                     </div>
                 </form>
-                <div id="account-delete">
+                <div id="account-delete" class="delete-btn">
                     <form action="index.php?page=accounts&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1">
-                        <button class="btn btn-danger" type="submit" form="form1" value="delete">Delete</button>
+                        <button class="btn btn-danger" type="submit" form="form1" value="delete">Delete Account</button>
                     </form>
                 </div>
             </div>

@@ -27,7 +27,7 @@ include "header.php";
 
     <div class="row">
         <div class="col-sm-2"></div>
-        <div class="col-sm-8" id="register-div-block">
+        <div class="col-sm-8 center-content-block" id="register-div-block">
             <div class="row">
                 <h1 id="register-title">Register</h1>
             </div>

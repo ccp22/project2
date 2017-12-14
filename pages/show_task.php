@@ -29,30 +29,80 @@ include 'header.php';
 
 ?>
 
-<form action="index.php?page=tasks&action=update&id=<?php echo $data->id;?>" method="post" id="form2">
-    Message: <input type="text" value="<?php echo $data->message;?>" name="message"><br>
-    Created Date: <input type="datetime-local" value="<?php echo dateToHTML($data->createddate);?>" name="createddate"><br>
-    Due Date: <input type="datetime-local" value="<?php echo dateToHTML($data->duedate);?>" name="duedate"><br>
-    Owner ID: <input type="text" value="<?php echo $data->ownerid;?>" name="ownerid" disabled><br>
-    Owner Email: <input type="text" value="<?php echo $data->owneremail;?>" name="owneremail" disabled><br>
-    Status: <select name="isdone">
-        <?php
-            if($data->isdone == 0) {
-                echo '
-                    <option value="1">Done</option>
-                    <option value="0" selected>Pending</option>';
-            }else {
-                echo '
-                    <option value="1" selected>Done</option>
-                    <option value="0">Pending</option>';
-            }
-        ?>
-    </select>
-    <button type="submit" value="update">Save</button>
-</form>
-<form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1">
-    <button type="submit" form="form1" value="delete">Delete</button>
-</form>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 center-content-block" id="task-block-div">
+            <div class="account-header-row">
+                <h1 id="user-name-title"><?php echo ucfirst($data->message);?></h1>
+            </div>
+            <div class="user-details-content-block">
+                <form class="form-horizontal" action="index.php?page=tasks&action=update&id=<?php echo $data->id;?>" method="POST">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="message">Message:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="message" value="<?php echo ucfirst($data->message);?>" name="message" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="createddate">Start Date:</label>
+                        <div class="col-sm-8">
+                            <input type="datetime-local" class="form-control" id="createddate" value="<?php echo dateToHTML($data->createddate);?>" name="createddate" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="duedate">Due Date:</label>
+                        <div class="col-sm-8">
+                            <input type="datetime-local" class="form-control" id="duedate" value="<?php echo dateToHTML($data->duedate);?>" name="duedate" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="ownerid">Owner ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="ownerid" value="<?php echo $data->ownerid;?>" name="ownerid" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="owneremail">Owner Email:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="owneremail" name="owneremail" value="<?php echo $data->owneremail;?>" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="isdone">Status:</label>
+                        <div class="col-sm-8">
+                            <select name="isdone" class="form-control">
+                                <?php
+                                if($data->isdone == 0) {
+                                    echo '
+                                        <option value="1">Done</option>
+                                        <option value="0" selected>Pending</option>';
+                                }else {
+                                    echo '
+                                        <option value="1" selected>Done</option>
+                                        <option value="0">Pending</option>';
+                                }
+                                ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-8">
+                            <button type="submit" class="btn btn-default" id="register-submit-btn">Update</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="task-delete" class="delete-btn">
+                    <form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?>" method="post" id="form1">
+                        <button class="btn btn-danger" type="submit" form="form1" value="delete">Delete Task</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+
 
 
 

@@ -22,7 +22,15 @@
 <?php
 include "header.php";
 ?>
-<h1>Page Not Found 404</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6 center-content-block" id="page-not-found-block">
+            <h1>Page Not Found 404</h1>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+</div>
 
 
 <script src="js/scripts.js"></script>

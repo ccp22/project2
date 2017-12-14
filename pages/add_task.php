@@ -23,7 +23,7 @@ include "header.php";
 <div class="container">
     <div class="row">
     <div class="col-sm-2"></div>
-    <div class="col-sm-8" id="addtask-div">
+    <div class="col-sm-8 center-content-block" id="addtask-div">
         <div class="row">
             <h1 id="register-title">Create New Task</h1>
         </div>

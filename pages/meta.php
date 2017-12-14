@@ -53,15 +53,15 @@
         margin-top: 20px !important;
         margin-bottom: 20px !important;
     }
-    #login-form-row1 {
-        height: 30px;
-    }
-    #login-block {
+
+    .center-content-block {
         background-color: lightgray;
         border-radius: 10px;
+        box-shadow: 0px 0px 20px 0px gray;
+    }
+    #login-block {
         height: 300px;
         padding-left: 40px;
-        box-shadow: 0px 0px 20px 0px gray;
     }
     #login-block:hover{
     }
@@ -86,17 +86,11 @@
         border-color: #333 !important;
     }
     #register-div-block {
-        background-color: lightgray;
-        border-radius: 10px;
         padding-left: 40px;
-        box-shadow: 0px 0px 20px 0px gray;
     }
     #addtask-div {
-        background-color: lightgray;
-        border-radius: 10px;
         height: 380px;
         padding-left: 40px;
-        box-shadow: 0px 0px 20px 0px gray;
     }
     .task-content-row{
         background-color: rgba(202, 202, 202, 0.36);
@@ -111,6 +105,9 @@
         box-shadow: 0px 0px 20px 0px gray;
     }
     @media screen and (min-width: 770px) {
+        #login-form-row1 {
+            height: 80px;
+        }
         .edit-row-btn {
             float: right;
         }
@@ -132,23 +129,26 @@
         #register-div-block{
             height: 670px;
         }
+        #login-form-row1 {
+            height: 10px;
+        }
     }
     #user-name-title {
         text-align: center;
         margin-bottom: 20px;
     }
     #account-block-div {
-        background-color: lightgray;
-        border-radius: 10px;
         padding-left: 40px;
-        box-shadow: 0px 0px 20px 0px gray;
     }
-    #account-delete {
+    .delete-btn {
         text-align: right;
     }
 
     a:active {
 
+    }
+    #page-not-found-block {
+        text-align: center;
     }
 
 </style>
