@@ -88,7 +88,6 @@
     #register-div-block {
         background-color: lightgray;
         border-radius: 10px;
-        height: 530px;
         padding-left: 40px;
         box-shadow: 0px 0px 20px 0px gray;
     }
@@ -111,12 +110,30 @@
     .task-content-row:hover {
         box-shadow: 0px 0px 20px 0px gray;
     }
-    .edit-row-btn {
-        float: right;
+    @media screen and (min-width: 770px) {
+        .edit-row-btn {
+            float: right;
+        }
+        .duedate-row {
+            float: left;
+        }
+        #register-div-block{
+            height: 530px;
+        }
     }
-    .duedate-row {
-        float: left;
+    @media screen and (max-width: 770px) {
+
+        .edit-row-btn {
+            float: none;
+        }
+        .duedate-row {
+            float: none;
+        }
+        #register-div-block{
+            height: 670px;
+        }
     }
+
     a:active {
 
     }
