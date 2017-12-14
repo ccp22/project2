@@ -133,6 +133,19 @@
             height: 670px;
         }
     }
+    #user-name-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #account-block-div {
+        background-color: lightgray;
+        border-radius: 10px;
+        padding-left: 40px;
+        box-shadow: 0px 0px 20px 0px gray;
+    }
+    #account-delete {
+        text-align: right;
+    }
 
     a:active {
 
