@@ -20,7 +20,6 @@
     <script type="text/javascript">
         var flag = true;
         function switchToEdit() {
-            document.getElementById('editButton').
             if(flag) {
                 document.getElementById('task-display-block').style.display = "none";
                 document.getElementById('edit-block').style.display = "block";
