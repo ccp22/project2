@@ -126,7 +126,8 @@ class accountsController extends http\controller
 
 
         if ($user == FALSE) {
-            echo 'user not found';
+            $error = 'User not found! Please register.';
+            self::getTemplate('error', $error);
         } else {
             logToConsole($_POST['password']);
             if($user->checkPassword($_POST['password'])) {

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="15c8b066-dc25-4e81-91b6-1847444d35fb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pages/show_task.php" afterPath="$PROJECT_DIR$/pages/show_task.php" />
+      <change beforePath="$PROJECT_DIR$/controllers/accountsController.php" afterPath="$PROJECT_DIR$/controllers/accountsController.php" />
     </list>
     <list id="af6e5da8-a1f7-4157-b2b6-779893e94faf" name="Initial MVC starter project added" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,18 +72,8 @@
       <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -94,6 +84,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accountsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/accountsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="128" column="53" lean-forward="false" selection-start-line="128" selection-start-column="53" selection-end-line="128" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -174,7 +174,6 @@
         <option value="$PROJECT_DIR$/pages/styles.css" />
         <option value="$PROJECT_DIR$/core/database/model.php" />
         <option value="$PROJECT_DIR$/pages/header.php" />
-        <option value="$PROJECT_DIR$/controllers/accountsController.php" />
         <option value="$PROJECT_DIR$/pages/error.php" />
         <option value="$PROJECT_DIR$/controllers/tasksController.php" />
         <option value="$PROJECT_DIR$/pages/meta.php" />
@@ -188,6 +187,7 @@
         <option value="$PROJECT_DIR$/pages/add_task.php" />
         <option value="$PROJECT_DIR$/pages/show_task.php" />
         <option value="$PROJECT_DIR$/database.php" />
+        <option value="$PROJECT_DIR$/controllers/accountsController.php" />
       </list>
     </option>
   </component>
@@ -327,7 +327,7 @@
       <workItem from="1512879619043" duration="12421000" />
       <workItem from="1512965291993" duration="6048000" />
       <workItem from="1513040605846" duration="20603000" />
-      <workItem from="1513134584529" duration="52844000" />
+      <workItem from="1513134584529" duration="52964000" />
     </task>
     <task id="LOCAL-00001" summary="Initial MVC starter project added">
       <created>1512606319175</created>
@@ -340,7 +340,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117592000" />
+    <option name="totallyTimeSpent" value="117712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="721" extended-state="0" />
@@ -711,14 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/accountsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="129" column="10" lean-forward="false" selection-start-line="129" selection-start-column="10" selection-end-line="129" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/error.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -854,10 +846,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/accountsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="128" column="53" lean-forward="false" selection-start-line="128" selection-start-column="53" selection-end-line="128" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
