@@ -56,11 +56,12 @@ class accountsController extends http\controller
             $user->phone = $_POST['phone'];
             $user->birthday = $_POST['birthday'];
             $user->gender = $_POST['gender'];
+//            print_r($_POST);
             //$user->password = $_POST['password'];
             //this creates the password
             //this is a mistake you can fix...
             //Turn the set password function into a static method on a utility class.
-            $user->password = $user->setPassword($_POST['password']);
+            $user->password = $user->setPassword($_POST['pwd']);
             $user->save();
 
             //you may want to send the person to a
@@ -127,7 +128,7 @@ class accountsController extends http\controller
         if ($user == FALSE) {
             echo 'user not found';
         } else {
-
+            logToConsole($_POST['password']);
             if($user->checkPassword($_POST['password'])) {
 
                 echo 'login<br>';
@@ -140,8 +141,9 @@ class accountsController extends http\controller
 
                 print_r($_SESSION);
             } else {
-                print_r($user);
-                echo 'password does not match';
+//                print_r($user);
+                $error = 'Password does not match.';
+                self::getTemplate('error', $error);
             }
 
         }
