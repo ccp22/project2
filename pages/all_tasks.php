@@ -73,7 +73,13 @@ include "header.php";
             </div>
         ';
     }else {
-        echo '<h4>You have not added any tasks yet!</h4>';
+        echo '
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8"><h1 style="text-align: center">You have not added any tasks yet!</h1></div>
+                </div>
+            </div>';
     }
 
 

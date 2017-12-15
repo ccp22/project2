@@ -39,7 +39,7 @@ include 'header.php';
             <div class="user-details-content-block">
                 <form class="form-horizontal" action="index.php?page=tasks&action=update&id=<?php echo $data->id;?>" method="POST">
                     <div class="form-group">
-                        <label class="control-label col-sm-2" for="message">Message:</label>
+                        <label class="control-label col-sm-2" for="message">Title:</label>
                         <div class="col-sm-8">
                             <input type="text" class="form-control" id="message" value="<?php echo ucfirst($data->message);?>" name="message" required>
                         </div>
@@ -65,7 +65,7 @@ include 'header.php';
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="owneremail">Owner Email:</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" id="owneremail" name="owneremail" value="<?php echo $data->owneremail;?>" disabled>
+                            <input type="email" class="form-control" id="owneremail" name="owneremail" value="<?php echo $data->owneremail;?>" disabled>
                         </div>
                     </div>
                     <div class="form-group">

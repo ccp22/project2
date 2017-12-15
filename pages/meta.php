@@ -13,6 +13,9 @@
         background-image: url('images/bg.jpg');
         font-family: 'Montserrat', sans-serif;
     }
+    #site-title {
+        color: #e8e8e8;
+    }
     a {
         text-decoration: none !important;
     }
@@ -83,7 +86,7 @@
     #register-submit-btn {
         color: #fff !important;
         background-color: #333 !important;
-        border-color: #333 !important;
+        border-color: #333 !important;;
     }
     #register-div-block {
         padding-left: 40px;

@@ -29,9 +29,9 @@ include "header.php";
         </div>
         <form class="form-horizontal" action="index.php?page=tasks&action=create" method="POST">
             <div class="form-group">
-                <label class="control-label col-sm-2" for="tmessage">Message:</label>
+                <label class="control-label col-sm-2" for="tmessage">Title:</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="tmessage" placeholder="Enter task message" name="tmessage" required>
+                    <input type="text" class="form-control" id="tmessage" placeholder="Enter task title" name="tmessage" required>
                 </div>
             </div>
             <div class="form-group">

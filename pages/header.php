@@ -1,6 +1,6 @@
 <div id="outer-div">
     <div id="logo-header">
-        <h2 id="logo-head-id">Tracklist</h2>
+        <h2 id="logo-head-id"><a href="index.php" id="site-title">Tracklist</a></h2>
     </div>
         <?php
             if (isset($_SESSION['uid'])) {
