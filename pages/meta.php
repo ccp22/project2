@@ -107,6 +107,8 @@
     .task-content-row:hover {
         box-shadow: 0px 0px 20px 0px gray;
     }
+
+
     @media screen and (min-width: 770px) {
         #login-form-row1 {
             height: 80px;
@@ -119,6 +121,9 @@
         }
         #register-div-block{
             height: 530px;
+        }
+        .edit-btn {
+            float: right;
         }
     }
     @media screen and (max-width: 770px) {
@@ -134,6 +139,9 @@
         }
         #login-form-row1 {
             height: 10px;
+        }
+        .edit-btn {
+            float: none;
         }
     }
     #user-name-title {

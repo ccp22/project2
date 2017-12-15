@@ -14,4 +14,15 @@ function dateToHTML($dt) {
     }else {
         return 'N/A';
     }
+
+}
+
+function simpleDate($dt) {
+    if($dt != '') {
+        $arr = explode(' ', $dt);
+        $dateArr = explode('-',$arr[0]);
+        return $dateArr[1].' / '.$dateArr[2].' / '.$dateArr[0];
+    }else {
+        return 'N/A';
+    }
 }
