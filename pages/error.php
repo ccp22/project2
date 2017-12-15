@@ -22,11 +22,16 @@
 <?php
 include "header.php";
 ?>
-
-<h1><?php echo $data ?></h1>
-<div>
-    <h3><a href="index.php">Home</a></h3>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6 center-content-block" id="page-not-found-block">
+            <h1><?php echo $data ?></h1>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
 </div>
+
 
 
 <script src="js/scripts.js"></script>

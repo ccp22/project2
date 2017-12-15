@@ -28,7 +28,7 @@ include "header.php";
 //print utility\htmlTable::genarateTableFromMultiArray($data);
 //    print_r($data);
 
-    if(count($data) > 1) {
+    if(count($data) > 0) {
         echo '
             <div class="container">
                 <div class="row">
