@@ -176,7 +176,7 @@ include "header.php";
                                 <h4 class="col-sm-12" for="birthday">Birthday:</h4>
                             </div>
                             <div class="col-sm-8">
-                                <h4><?php echo $data->birthday;?></h4>
+                                <h4><?php echo simpleDate($data->birthday);?></h4>
                             </div>
                         </div>
                         <div class="form-group">

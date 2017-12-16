@@ -27,8 +27,15 @@ include "header.php";
 //this is how you print something
 //print utility\htmlTable::genarateTableFromMultiArray($data);
 //    print_r($data);
-
-    if(count($data) > 0) {
+    if($data == null) {
+        echo '
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8"><h1 style="text-align: center">You have not added any tasks yet!</h1></div>
+                </div>
+            </div>';
+    }elseif (count($data) > 0) {
         echo '
             <div class="container">
                 <div class="row">
