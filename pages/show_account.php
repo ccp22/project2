@@ -32,6 +32,20 @@
             }
             flag = !flag;
         }
+
+        function validateMe() {
+            var fname = document.getElementById('fname').value;
+            var lname = document.getElementById('lname').value;
+            if(fname.length < 1) {
+                window.alert('First name must be at least 1 character.');
+                return false;
+            }
+            if(lname.length < 1) {
+                window.alert('Last name must be at least 1 character.');
+                return false;
+            }
+            return true;
+        }
     </script>
 </head>
 
@@ -58,7 +72,7 @@ include "header.php";
             </div>
             <div id="edit-block" style="display: none">
                 <div class="user-details-content-block">
-                    <form class="form-horizontal" action="index.php?page=accounts&action=save&id=<?php echo $data->id; ?>" method="POST">
+                    <form class="form-horizontal" action="index.php?page=accounts&action=save&id=<?php echo $data->id; ?>" method="POST" onsubmit="return validateMe();">
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="fname">First Name:</label>
                             <div class="col-sm-8">
@@ -74,7 +88,7 @@ include "header.php";
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="email">Email:</label>
                             <div class="col-sm-8">
-                                <input type="email" class="form-control" id="email" value="<?php echo $data->email;?>" name="email" required>
+                                <input type="email" class="form-control" id="email" value="<?php echo $data->email;?>" name="email" required readonly>
                             </div>
                         </div>
                         <div class="form-group">

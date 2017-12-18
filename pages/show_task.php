@@ -31,6 +31,14 @@
             }
             flag = !flag;
         }
+        function validateMe() {
+            var msg = document.getElementById('message').value;
+            if(msg.length < 2) {
+                window.alert('ToDo title must be more than 1 character.');
+                return false;
+            }
+            return true;
+        }
     </script>
 
 </head>
@@ -55,7 +63,7 @@ include 'header.php';
             </div>
             <div id="edit-block" style="display: none">
                 <div class="user-details-content-block">
-                    <form class="form-horizontal" action="index.php?page=tasks&action=update&id=<?php echo $data->id;?>" method="POST">
+                    <form class="form-horizontal" action="index.php?page=tasks&action=update&id=<?php echo $data->id;?>" method="POST" onsubmit="return validateMe();">
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="message">Title:</label>
                             <div class="col-sm-8">
@@ -65,13 +73,13 @@ include 'header.php';
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="createddate">Start Date:</label>
                             <div class="col-sm-8">
-                                <input type="datetime-local" class="form-control" id="createddate" value="<?php echo dateToHTML($data->createddate);?>" name="createddate" required>
+                                <input type="datetime-local" class="form-control" id="createddate" value="<?php echo dateToHTML($data->createddate);?>" name="createddate" readonly>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="duedate">Due Date:</label>
                             <div class="col-sm-8">
-                                <input type="datetime-local" class="form-control" id="duedate" value="<?php echo dateToHTML($data->duedate);?>" name="duedate" required>
+                                <input type="datetime-local" class="form-control" id="duedate" value="<?php echo dateToHTML($data->duedate);?>" name="duedate" readonly>
                             </div>
                         </div>
                         <div class="form-group">

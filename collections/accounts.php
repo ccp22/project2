@@ -25,7 +25,7 @@ class accounts extends \database\collection
     }
 
 
-
+    // To find a user by the user id.
     public static function findUserbyID($id)
     {
 

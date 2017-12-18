@@ -26,7 +26,11 @@ class tasksController extends http\controller
         $records = todos::findAll();
         session_start();
 
-        $userID = $_SESSION['uid'];
+        if (isset($_SESSION['uid'])) {
+            $userID = $_SESSION['uid'];
+        }else {
+            header("Location: index.php");
+        }
 
         $records = todos::findTasksbyID($userID);
 
@@ -49,6 +53,7 @@ class tasksController extends http\controller
         self::getTemplate('add_task');
     }
 
+    //A method to add new todo to the database and redirect user to all todos by same ownerid.
     public static function addNew() {
         session_start();
 

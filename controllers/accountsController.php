@@ -106,9 +106,10 @@ class accountsController extends http\controller
     public static function delete() {
 
         $record = accounts::findOne($_REQUEST['id']);
+        //When account delete will be requested, session will be destroyed and key will be nil.
         $record->delete();
-        session_destroy();
         unset($_SESSION['uid']);
+        session_destroy();
         header("Location: index.php");
     }
 
@@ -134,6 +135,8 @@ class accountsController extends http\controller
 
                 echo 'login<br>';
                 print_r($user);
+
+                //This will start the session on the login action and will store session key.
                 session_start();
                 $_SESSION['uid'] = $user->id;
                 //forward the user to the show all todos page
@@ -150,6 +153,8 @@ class accountsController extends http\controller
         }
     }
 
+
+    //A method to logout user and destroy the session and redirect to login page.
     public static function logout() {
         logToConsole('Inside Logout');
         session_start();

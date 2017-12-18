@@ -13,6 +13,18 @@
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
+
+    <script type="text/javascript">
+        function validateMe() {
+            var msg = document.getElementById('tmessage').value;
+            if(msg.length < 2) {
+                window.alert('ToDo title must be more than 1 character.');
+                return false;
+            }
+            return true;
+        }
+    </script>
+
 </head>
 
 <body>
@@ -27,7 +39,7 @@ include "header.php";
         <div class="row">
             <h1 id="register-title">Create New Task</h1>
         </div>
-        <form class="form-horizontal" action="index.php?page=tasks&action=create" method="POST">
+        <form class="form-horizontal" action="index.php?page=tasks&action=create" method="POST" onsubmit="return validateMe();">
             <div class="form-group">
                 <label class="control-label col-sm-2" for="tmessage">Title:</label>
                 <div class="col-sm-8">
@@ -48,7 +60,7 @@ include "header.php";
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-8">
-                    <button type="submit" class="btn btn-default" id="register-submit-btn">Save</button>
+                    <button type="submit" class="btn btn-default" id="register-submit-btn" >Save</button>
                 </div>
             </div>
         </form>

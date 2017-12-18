@@ -15,6 +15,33 @@
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+
+    <script type="text/javascript">
+        function validateMe() {
+            var fname = document.getElementById('fname').value;
+            var lname = document.getElementById('lname').value;
+            var pwd = document.getElementById('pwd').value;
+            var phone = document.getElementById('phone').value;
+            if(fname.length < 1) {
+                window.alert('First name must be at least 1 character.');
+                return false;
+            }
+            if(lname.length < 1) {
+                window.alert('Last name must be at least 1 character.');
+                return false;
+            }
+            if(pwd.length < 6) {
+                window.alert('Password must be at least 6 character.');
+                return false;
+            }
+            if(phone.length != 10 && isNaN(parseInt(phone))) {
+                window.alert('Enter 10 digit valid phone number.');
+                return false;
+            }
+            return true;
+        }
+    </script>
+
     <![endif]-->
 </head>
 
@@ -31,7 +58,7 @@ include "header.php";
             <div class="row">
                 <h1 id="register-title">Register</h1>
             </div>
-            <form class="form-horizontal" action="index.php?page=accounts&action=register" method="POST">
+            <form class="form-horizontal" action="index.php?page=accounts&action=register" method="POST" >
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="fname">First Name:</label>
                     <div class="col-sm-8">
@@ -76,12 +103,12 @@ include "header.php";
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="pwd">Password:</label>
                     <div class="col-sm-8">
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+                        <input type="password" pattern="^.{6,}$" title="Must be 6 or more characters." class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-8">
-                        <button type="submit" class="btn btn-default" id="register-submit-btn">Submit</button>
+                        <button type="submit" class="btn btn-default" id="register-submit-btn" onclick="return validateMe()">Submit</button>
                     </div>
                 </div>
             </form>

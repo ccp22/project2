@@ -94,8 +94,9 @@ class routes
         $route->controller = 'accountsController';
         $route->method = 'all';
         $routes[] = $route;
-        //GET METHOD index.php?page=accounts&action=show
 
+
+        //GET METHOD index.php?page=accounts&action=show
         $route = new route();
         $route->http_method = 'GET';
         $route->action = 'show';
@@ -116,6 +117,8 @@ class routes
         $route->method = 'login';
         $routes[] = $route;
 
+        //Request to logout for account user.
+        //GET Method: index.php?page=accounts&action=logout
         $route = new route();
         $route->http_method = 'GET';
         $route->action = 'logout';
@@ -126,6 +129,9 @@ class routes
 
         //YOU WILL NEED TO ADD MORE ROUTES
 
+
+        //Request to delete exisitng task from todo-list
+        //POST Method: index.php?page=tasks&action=delete
         $route = new route();
         $route->http_method = 'POST';
         $route->action = 'delete';
@@ -134,6 +140,9 @@ class routes
         $route->method = 'delete';
         $routes[] = $route;
 
+
+        //Request to update exising task with new details from todo-list
+        //POST Method: index.php?page=tasks&action=update
         $route = new route();
         $route->http_method = 'POST';
         $route->action = 'update';
@@ -142,7 +151,8 @@ class routes
         $route->method = 'store';
         $routes[] = $route;
 
-
+        //Request to delete existing user account/ delete the profile
+        //POST Method: index.php?page=accounts&action=delete
         $route = new route();
         $route->http_method = 'POST';
         $route->action = 'delete';
@@ -151,6 +161,9 @@ class routes
         $route->method = 'delete';
         $routes[] = $route;
 
+
+        //Request to edit existing account of a user
+        //GET Method: index.php?page=accounts&action=edit
         $route = new route();
         $route->http_method = 'GET';
         $route->action = 'edit';
@@ -159,6 +172,7 @@ class routes
         $route->method = 'edit';
         $routes[] = $route;
 
+
         $route = new route();
         $route->http_method = 'POST';
         $route->action = 'save';
@@ -166,6 +180,7 @@ class routes
         $route->controller = 'accountsController';
         $route->method = 'save';
         $routes[] = $route;
+
         //this is the route for the reg form
         $route = new route();
         $route->http_method = 'GET';
@@ -174,6 +189,7 @@ class routes
         $route->controller = 'accountsController';
         $route->method = 'register';
         $routes[] = $route;
+
         //this handles the reg post to create the user
         $route = new route();
         $route->http_method = 'POST';
